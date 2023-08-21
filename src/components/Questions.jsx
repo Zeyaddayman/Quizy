@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './Questions.css';
 import { useDispatch, useSelector } from "react-redux";
-import { saveUserAnswer, saveUserResult } from "../rtk/reducers/userInfoSlice";
+import { saveUserAnswer, saveUserResult } from "./../rtk/reducers/userInfoSlice";
 import { Link } from "react-router-dom";
 import RestartBtn from "./RestartBtn";
 

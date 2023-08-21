@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import './Result.css';
 import ResultsLog from './ResultsLog';
 import RestartBtn from './RestartBtn';
-import { addResult } from '../rtk/reducers/resultsSlice';
+import { addResult } from './../rtk/reducers/resultsSlice';
 
 function Result() {
 

@@ -2,8 +2,8 @@ import './Home.css';
 import { rules } from '../assets/rules.js'
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { fetchQuestions } from '../rtk/reducers/questionsSlice';
-import { changeUsername, clearUserAnswers } from '../rtk/reducers/userInfoSlice';
+import { fetchQuestions } from './../rtk/reducers/questionsSlice';
+import { changeUsername, clearUserAnswers } from './../rtk/reducers/userInfoSlice';
 
 function Home() {
     

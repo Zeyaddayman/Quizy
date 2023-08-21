@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import questionsData from '../../assets/questions.json';
+import questionsData from './../../assets/questions.json';
 
 const questionsSlice = createSlice({
     name: 'questionsSlice',
