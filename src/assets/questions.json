@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "title": "How Many JavaScript Data Types ?",
+        "answers": ["4", "6", "5"],
+        "correct": "5"
+    },
+    {
+        "id": "2",
+        "title": "(true + false) > 2 + true; What Is The Result ?",
+        "answers": ["false", "true", "error"],
+        "correct": "false"
+    },
+    {
+        "id": "3",
+        "title": "What is the output of the following code ? console.log(2 + \"3\")",
+        "answers": ["\"23\"", "5", "23"],
+        "correct": "\"23\""
+    },
+    {
+        "id": "4",
+        "title": "Which of the following type of variable takes precedence over other if names are same ?",
+        "answers": ["Global variable", "Local variable", " None of the above."],
+        "correct": "Local variable"
+    },
+    {
+        "id": "5",
+        "title": "Which built-in method returns the calling string value converted to upper case ?",
+        "answers": ["toUpperCase()", "toUpper()", "changeCase(case)"],
+        "correct": "toUpperCase()"
+    },
+    {
+        "id": "6",
+        "title": "Which of the following function of String object splits a String object into an array of strings by separating the string into substrings?",
+        "answers": ["replace()", "split()", "slice()"],
+        "correct": "split()"
+    },
+    {
+        "id": "7",
+        "title": "What is the type of NaN ?",
+        "answers": ["undefined", "null", "number"],
+        "correct": "number"
+    },
+    {
+        "id": "8",
+        "title": "Do you know what will be the output of this code ? console.log(typeof typeof 1)",
+        "answers": ["number", "function", "string"],
+        "correct": "string"
+    },
+    {
+        "id": "9",
+        "title": "The \"this\" keyword in javascript refers to: ",
+        "answers": ["The previous object that called the function", "The current function", "The object that owns the executing code"],
+        "correct": "The object that owns the executing code"
+    },
+    {
+        "id": "10",
+        "title": "What is the result of the following experssion ? 10 % 3",
+        "answers": ["3.33", "1", "0"],
+        "correct": "1"
+    }
+]

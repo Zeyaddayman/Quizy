@@ -1,0 +1,8 @@
+.main-page .container input {
+    border: 2px solid var(--color-3);
+    outline: none;
+}
+
+.main-page .container .start-btn {
+    background-color: var(--color-4);
+}
