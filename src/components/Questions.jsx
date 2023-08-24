@@ -32,6 +32,7 @@ function Questions() {
             isCorrect: userAnswer === questions[currentQuestionIndex].correct
         }
         dispatch(saveUserAnswer(userQuestionObj));
+        console.log(userInfo.answers)
     }
 
     const saveUserResultfn = () => {
