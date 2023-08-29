@@ -5,7 +5,6 @@ import { saveUserAnswer, saveUserResult } from "./../rtk/reducers/userInfoSlice"
 import { Link } from "react-router-dom";
 import RestartBtn from "./RestartBtn";
 
-
 function Questions() {
 
     const questions = useSelector((state) => state.questions);
@@ -32,7 +31,7 @@ function Questions() {
             isCorrect: userAnswer === questions[currentQuestionIndex].correct
         }
         dispatch(saveUserAnswer(userQuestionObj));
-        console.log(userInfo.answers)
+        console.log(userInfo.answers);
     }
 
     const saveUserResultfn = () => {
@@ -88,11 +87,11 @@ function Questions() {
                 </div>
                 <div className='control-btns flex justify-between'>
                     <button onClick={() => {
-                        let input = document.querySelector('.questions-page .answers .answer input:checked');
+                        let selectedInput = document.querySelector('.questions-page .answers .answer input:checked');
 
-                        if (input !== null) {
+                        if (selectedInput !== null) {
                             // save question
-                            saveQuestion(input.id);
+                            saveQuestion(selectedInput.id);
                         }
 
                         if (currentQuestionIndex !== 0) {
@@ -104,10 +103,10 @@ function Questions() {
                     
                     {!isLastQuestion ? (
                         <button onClick={() => {
-                            let input = document.querySelector('.questions-page .answers .answer input:checked');
+                            let selectedInput = document.querySelector('.questions-page .answers .answer input:checked');
 
-                            if (input !== null) {
-                                saveQuestion(input.id);
+                            if (selectedInput !== null) {
+                                saveQuestion(selectedInput.id);
                             }
 
                             if (currentQuestionIndex !== questions.length - 1) {
@@ -122,15 +121,10 @@ function Questions() {
                     ) : ( // only in last question
 
                         <Link to={'/result'} onClick={() => {
-                            let input = document.querySelector('.questions-page .answers .answer input:checked');
+                            let selectedInput = document.querySelector('.questions-page .answers .answer input:checked');
     
-                            if (input !== null) {
-                                saveQuestion(input.id);
-                            }
-    
-                            if (currentQuestionIndex !== questions.length - 1) {
-                                // change question
-                                setCurrentQuestionIndex(currentQuestionIndex + 1);
+                            if (selectedInput !== null) {
+                                saveQuestion(selectedInput.id);
                             }
 
                             saveUserResultfn();

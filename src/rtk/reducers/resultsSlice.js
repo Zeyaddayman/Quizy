@@ -10,10 +10,8 @@ if (localStorge.getItem('results') !== null) {
     resultsState = [];
 }
 
-localStorge.setItem('results', JSON.stringify(resultsState));
-
 const resultsSlice = createSlice({
-    name: 'userInfoSlice',
+    name: 'resultsSlice',
     initialState: resultsState,
     reducers: {
         addResult: (state, action) => {

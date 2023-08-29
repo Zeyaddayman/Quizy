@@ -22,7 +22,6 @@ function Result() {
 
     // add current result
     if (Object.keys(userInfo.result).length !== 0) {
-        console.log('hello');
         dispatch(addResult(userInfo.result));
     }
 
